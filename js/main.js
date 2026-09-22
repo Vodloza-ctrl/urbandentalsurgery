@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // reveal-on-scroll
   var els = document.querySelectorAll('[data-reveal]');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     els.forEach(function (e) { e.classList.add('in'); });
   }
 
-  // mobile drawer
   var drawer = document.getElementById('drawer');
   var menuBtn = document.getElementById('menuBtn');
   var drawerClose = document.getElementById('drawerClose');
